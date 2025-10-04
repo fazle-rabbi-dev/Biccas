@@ -17,7 +17,7 @@ It focuses on `clean structure`, `responsive layout`, and maintainable code.
 
 ## 🔗 Live Demo
 
-[🌍 Visit Site](https://biccas2.vercel.app/)
+[🌍 Visit Site](https://biccas-alpha.vercel.app/)
 
 ## 🧰 Tech Stack
 
