@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--color-white-2: #f8f8fa;
+	--color-black-2: #191a15;
+	--color-muted: #a6a6a6;
+	--color-accent: #54bd95;
+	--color-footer: #161c28;
+
+	--leading-30: 30px;
+	--shadow-minimal: 0px 4px 9px rgba(0, 0, 0, 0.05);
+	--font-inter: "Inter", sans-serif;
+
+	--breakpoint-xsm: 480px;
+	--breakpoint-2xl: 1440px;
+}
+
+@layer base {
+	html,
+	body,
+	#root {
+		@apply h-full font-inter text-black-2;
+	}
+
+	main {
+		@apply space-y-[70px] lg:space-y-[100px] 2xl:space-y-[130px];
+	}
+}
+
+@layer components {
+	.primary-container {
+		@apply max-w-2xl lg:max-w-[1440px] mx-auto px-4 lg:px-10;
+	}
+
+	.btn-primary {
+		@apply bg-accent text-lg font-medium text-white-2 leading-[30px];
+	}
+
+	.btn-primary-full-rounded {
+		@apply bg-accent text-lg font-medium text-white-2 leading-[30px] px-[30px] py-5 rounded-[40px];
+	}
+}
+
+@layer utilities {
+	/* ---- TYPOGRAPHY ---- */
+	.h2-bold-sm {
+		@apply text-[28px] md:text-[40px] font-bold;
+	}
+
+	.h2-bold {
+		@apply text-[38px] md:text-[50px] font-bold;
+	}
+
+	.h2-semibold {
+		@apply text-[38px] md:text-[50px] font-semibold;
+	}
+
+	.link-active {
+		@apply text-base font-medium text-black;
+	}
+
+	.link-inactive {
+		@apply text-lg font-medium text-muted;
+	}
+
+	.body-medium {
+		@apply text-lg font-medium leading-[30px];
+	}
+
+	.body-bold {
+		@apply text-lg font-bold;
+	}
+
+	.base-medium {
+		@apply text-base font-medium leading-[30px];
+	}
+
+	.small-medium {
+		@apply text-sm font-medium;
+	}
+
+	/* ---- UTILITIES ---- */
+	.btn-signup {
+		@apply bg-accent font-medium text-white-2 w-[80px] h-[40px] rounded-[10px] p-[10px];
+	}
+
+	.hero-title {
+		@apply text-[35px] lg:text-[50px] xl:text-[80px] font-bold  leading-[45px] lg:leading-[65px] xl:leading-[90px] break-all xsm:break-normal;
+	}
+
+	.support-card-title {
+		@apply text-[20px] sm:text-[28px] font-bold;
+	}
+
+	.feature-card-title {
+		@apply text-[20px] sm:text-[28px] font-semibold leading-[30px];
+	}
+
+	.pricing-card-title {
+		@apply text-[30px] font-semibold;
+	}
+
+	.pricing-card-price {
+		@apply text-[50px] font-semibold leading-[30px];
+	}
+
+	.pricing-card-button-white {
+		@apply bg-white h-[64px] rounded-[20px] shadow-minimal text-lg font-semibold leading-30 text-accent;
+	}
+
+	.pricing-card-button-green {
+		@apply bg-accent h-[64px] rounded-[20px] text-lg font-semibold leading-30 text-white;
+	}
+
+	/* FOOTER */
+	.footer-form-title {
+		@apply text-[30px] font-medium text-white text-center;
+	}
+
+	.footer-form-button {
+		@apply w-full bg-accent py-[20px] font-semibold text-white rounded-[10px];
+	}
+
+	.footer-form-input {
+		@apply w-full bg-white rounded-[10px] px-5 py-[17px] outline-0 text-black;
+	}
+
+	/* Debugging Utilities */
+	.b1 {
+		@apply border border-2 border-red-500;
+	}
+
+	.b2 {
+		@apply border border-2 border-teal-500;
+	}
+}
