@@ -25,6 +25,8 @@ const Header = () => {
 						src="images/misc/Ellipse-36.avif"
 						alt=""
 						className="w-full"
+						loading="eager"
+						decoding="async"
 					/>
 				</div>
 
@@ -34,6 +36,8 @@ const Header = () => {
 						src="images/misc/Ellipse-37.avif"
 						alt=""
 						className="w-full"
+						loading="eager"
+						decoding="async"
 					/>
 				</div>
 

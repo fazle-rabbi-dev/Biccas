@@ -40,8 +40,11 @@ const Hero = () => {
 			<div className="order-1 lg:order-2">
 				<img
 					src="images/misc/hero-man.png"
-					alt="Hero"
+					alt="Hero Man"
 					className="w-full"
+					loading="eager"
+					decoding="async"
+					height={600}
 				/>
 			</div>
 		</section>
