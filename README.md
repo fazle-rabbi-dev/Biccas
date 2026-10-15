@@ -2,6 +2,8 @@
 
 A pixel-perfect implementation of a Figma `saas landing page design` using modern frontend tools.
 
+> 💡 All code written by hand. No AI.
+
 ## 🎨 Overview
 
 This project is a **Figma to Code** conversion that I built to practice and showcase my **frontend development skills** through real-world UI implementation.
